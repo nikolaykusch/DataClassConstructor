@@ -25,13 +25,13 @@ public string Id
     }
 }
 
-private string Name = "Some name";
+private string name = string Name "Some name";
 public string Name
 {
-    get => Name
+    get => name
     set
     {
-        Name = value;
+        name = value;
         OnPropertyChanged(nameof(Name));
     }
 }

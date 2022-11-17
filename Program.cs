@@ -27,7 +27,7 @@ namespace DataClassConstructor
                 if (item.Count() == 2)
                 {
                     string type = item[0];
-                    string name = item[1];
+                    string name = item[1][0].ToString().ToLower() + item[1].Substring(1);
                     string Name = name[0].ToString().ToUpper() + name.Substring(1);
                     string s =
 $"\n\nprivate {type} {name};" + "\n" +
@@ -48,7 +48,7 @@ $"        OnPropertyChanged(nameof({Name}));\n" +
                 else
                 {
                     string type = item[0];
-                    string name = item[1];
+                    string name = item[1][0].ToString().ToLower() + item[1].Substring(1);
                     string Name = name[0].ToString().ToUpper() + name.Substring(1);
                     string value = line.Replace(type + " " + name + " ", "");
                     string s =

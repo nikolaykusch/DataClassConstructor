@@ -1,9 +1,9 @@
-# Simple C# Datacass constructor with call "OnPropertyChanged"
+# Simple C# Dataclass constructor with call "OnPropertyChanged"
 
 
 
 ## Instructions
-1. Creatre a file named "input.txt" in the program folder. 
+1. Unzip the archive, then creatre a file named "input.txt" in the program folder, if it does not exist. 
 2. List the required properties in the file. Format [type] [name] [value] (if need). Each new property must be on a new line. 
 Example
 ```

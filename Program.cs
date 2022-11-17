@@ -32,25 +32,25 @@ namespace DataClassConstructor
                     string s =
 $"\n\nprivate {type} {name};" + "\n" +
 $"public {type} {Name}\n" +
-"{\n"+
+"{\n" +
 $"    get => {name}\n" +
 $"    set\n" +
-"    {\n"  +
-$"        {name} = value;\n"  +
+"    {\n" +
+$"        {name} = value;\n" +
 $"        OnPropertyChanged(nameof({Name}));\n" +
-"    }\n"+
+"    }\n" +
 "}";
 
                     File.AppendAllText("out.txt", s);
                 }
 
                 //check, is property has default value
-                if (item.Count() == 3)
+                else
                 {
                     string type = item[0];
                     string name = item[1];
                     string Name = name[0].ToString().ToUpper() + name.Substring(1);
-                    string value = item[2];
+                    string value = line.Replace(type + " " + name + " ", "");
                     string s =
 $"\n\nprivate {type} {name} = {value};" + "\n" +
 $"public {type} {Name}\n" +

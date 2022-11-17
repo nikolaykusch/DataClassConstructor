@@ -7,9 +7,9 @@
 2. List the required properties in the file. Format [type] [name] [value] (if need). Each new property must be on a new line. 
 Example
 ```
-  string id  
-  string Name SomeName  
-  bool isComplete False  
+string id  
+string Name "Some name" 
+bool isComplete False  
 ```
 3. Run app. As a result, you will get a block of code in the "out.txt" file. Just copy it into your class
 Example
@@ -25,7 +25,7 @@ public string Id
     }
 }
 
-private string Name = "SomeName";
+private string Name = "Some name";
 public string Name
 {
     get => Name
@@ -46,5 +46,4 @@ public bool IsComplete
         OnPropertyChanged(nameof(IsComplete));
     }
 }
-
 ```

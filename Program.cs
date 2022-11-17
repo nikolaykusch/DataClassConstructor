@@ -33,7 +33,7 @@ namespace DataClassConstructor
 $"\n\nprivate {type} {name};" + "\n" +
 $"public {type} {Name}\n" +
 "{\n" +
-$"    get => {name}\n" +
+$"    get => {name};\n" +
 $"    set\n" +
 "    {\n" +
 $"        {name} = value;\n" +
@@ -55,7 +55,7 @@ $"        OnPropertyChanged(nameof({Name}));\n" +
 $"\n\nprivate {type} {name} = {value};" + "\n" +
 $"public {type} {Name}\n" +
 "{\n" +
-$"    get => {name}\n" +
+$"    get => {name};\n" +
 $"    set\n" +
 "    {\n" +
 $"        {name} = value;\n" +

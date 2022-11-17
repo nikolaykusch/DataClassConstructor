@@ -12,15 +12,21 @@ namespace DataClassConstructor
             //open file with properties and read it
             var input = File.ReadAllText("input.txt").Split('\n');
 
-            foreach( var l in input)
+            foreach (var l in input)
             {
                 string line = l;
 
+                if (line.Length == 0)
+                    continue;
                 //remove the unnecessary end of the string 
                 while (line.Last().ToString() == " " || line.Last().ToString() == "\r" || line.Last().ToString() == "\n")
                 {
-                   line = line.Substring(0, line.Length - 1);
+                    line = line.Substring(0, line.Length - 1);
+                    if (line.Length == 0 || line.Split(" ").Length < 2)
+                        break;
                 }
+                if (line.Length == 0 || line.Split(" ").Length < 2)
+                    continue;
                 var item = line.Split(' ');
 
                 //check, is property does not has default value

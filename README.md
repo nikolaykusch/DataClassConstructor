@@ -19,7 +19,7 @@ Example
 private string id;
 public string Id
 {
-    get => id
+    get => id;
     set
     {
         id = value;
@@ -30,7 +30,7 @@ public string Id
 private string name = "Some name";
 public string Name
 {
-    get => name
+    get => name;
     set
     {
         name = value;
@@ -41,7 +41,7 @@ public string Name
 private bool isComplete = False;
 public bool IsComplete
 {
-    get => isComplete
+    get => isComplete;
     set
     {
         isComplete = value;

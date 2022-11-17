@@ -25,7 +25,7 @@ public string Id
     }
 }
 
-private string name = string Name "Some name";
+private string name = "Some name";
 public string Name
 {
     get => name

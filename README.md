@@ -1,6 +1,8 @@
 # Simple C# Dataclass constructor with call "OnPropertyChanged"
 
 
+I wrote it for myself, but maybe someone will need it. The code there is very ugly :)
+
 
 ## Instructions
 1. Unzip the archive, then creatre a file named "input.txt" in the program folder, if it does not exist. 
